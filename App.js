@@ -9,16 +9,6 @@ function setNightMode(on) {
     document.body.classList.remove("night");
     nightIcon.textContent = "🌙";
   }
-  // Set section backgrounds for night mode
-  document.querySelectorAll('.page-section').forEach(section => {
-    switch(section.id) {
-      case 'hero': section.style.background = on ? 'var(--night-hero-bg)' : 'var(--hero-bg)'; break;
-      case 'skills': section.style.background = on ? 'var(--night-skills-bg)' : 'var(--skills-bg)'; break;
-      case 'certifications': section.style.background = on ? 'var(--night-cert-bg)' : 'var(--cert-bg)'; break;
-      case 'projects': section.style.background = on ? 'var(--night-proj-bg)' : 'var(--proj-bg)'; break;
-      case 'contact': section.style.background = on ? 'var(--night-contact-bg)' : 'var(--contact-bg)'; break;
-    }
-  });
 }
 let night = false;
 nightToggle.onclick = () => { night = !night; setNightMode(night); };
