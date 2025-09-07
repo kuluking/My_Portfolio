@@ -4,27 +4,22 @@ document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      window.scrollTo({ top: target.offsetTop - 10, behavior: 'smooth' });
+      window.scrollTo({ top: target.offsetTop - 12, behavior: 'smooth' });
     }
   });
 });
 
-// Animate on scroll
+// Animate tiles on scroll
 function revealOnScroll() {
-  const reveals = document.querySelectorAll('.slide-in,.fade-in,.fade-up,.zoom-in');
+  const tiles = document.querySelectorAll('.tile');
   const windowHeight = window.innerHeight;
-  reveals.forEach(el => {
+  tiles.forEach(el => {
     const top = el.getBoundingClientRect().top;
-    if (top < windowHeight - 30) el.classList.add('visible');
+    if (top < windowHeight - 30) el.style.opacity = 1;
   });
 }
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
-
-// Add visible class to trigger transitions
-document.querySelectorAll('.slide-in,.fade-in,.fade-up,.zoom-in').forEach(el => {
-  el.classList.add('animated');
-});
 
 // Contact form feedback
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,12 +36,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Add a little interactive bounce on skill card click
-document.querySelectorAll('.skill-card').forEach(card => {
-  card.addEventListener('click', function() {
-    card.style.transform = "scale(1.18) rotate(-1deg)";
-    setTimeout(() => {
-      card.style.transform = "";
-    }, 270);
+// Tile interactive bounce effect
+document.querySelectorAll('.tile').forEach(tile => {
+  tile.addEventListener('mousedown', function() {
+    tile.style.transform += " scale(0.93)";
+  });
+  tile.addEventListener('mouseup', function() {
+    tile.style.transform = "";
+  });
+  tile.addEventListener('mouseleave', function() {
+    tile.style.transform = "";
   });
 });
