@@ -7,7 +7,6 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   min-height: 100vh;
   color: #181928;
-  /* Eye-catching animated gradient background */
   background: linear-gradient(-45deg, #f7971e, #ffd200, #21d4fd, #b721ff, #ff6a00, #f9d423);
   background-size: 400% 400%;
   animation: bg-move 14s ease-in-out infinite;
@@ -161,7 +160,7 @@ main {
   max-width: 560px;
   text-align: left;
   z-index:2;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.91);
   border-radius: 18px;
   padding: 32px 44px 38px 44px;
   box-shadow: 0 8px 40px 6px #ffd16644, 0 1px 2px #8c52ff22;
@@ -214,7 +213,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.92);
   box-shadow: 0 2px 30px 0 #8c52ff11;
 }
 .section-title {
@@ -272,7 +271,6 @@ main {
   background: linear-gradient(120deg, #20a7cc 0%, #8c52ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 .tile-title {
   font-size:1.13rem;
@@ -321,6 +319,7 @@ footer {
   background:linear-gradient(90deg,#20a7cc 10%,#8c52ff 100%);
   color:#fff;margin-top:32px;
   animation: fadeIn 2s;
+  box-shadow: 0 -2px 30px 0 #8c52ff11;
 }
 @keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
 @keyframes fadeUp {from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
