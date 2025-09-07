@@ -1,113 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Prasanta Kumar Khatei Portfolio</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanta Kumar Khatei Portfolio 🚀</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 🎯 Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <span class="nav__logo">Prasanta ✨</span>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#hero" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#certifications" class="nav__link">Certifications</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span class="nav__toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section id="hero">
-    <div class="avatar">
-      <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=prasanta" alt="Avatar" />
-    </div>
-    <h1>Hi, I'm Prasanta Kumar Khatei 👋</h1>
-    <p>AEM Developer • Adobe Analytics • Web Specialist</p>
-  </section>
-
-  <section id="skills">
-    <h2>My Skills 🛠️</h2>
-    <div class="skills-list">
-      <span>🐍 Python</span>
-      <span>💻 HTML5</span>
-      <span>🎨 CSS3</span>
-      <span>🛠️ JavaScript</span>
-      <span>🌐 AEM Developer</span>
-      <span>📊 Adobe Analytics Developer</span>
-    </div>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications 📜</h2>
-    <div class="cert-list">
-      <div>
-        <span>✅</span>
-        <div>
-          <strong>Adobe Certified Expert - AEM Developer</strong><br/>
-          <small>Adobe, 2023</small>
+    <!-- 🚀 Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <div class="profile-img-animated pop-in">
+                    <!-- Using a random avatar SVG service (e.g., DiceBear) -->
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=prasanta" alt="Prasanta Kumar Khatei Avatar" class="profile-img" />
+                </div>
+                <h1 class="hero__title animate-fade-in-up">Hi, I'm Prasanta Kumar Khatei <span class="wave">👋</span></h1>
+                <p class="hero__subtitle animate-fade-in-up">AEM Developer • Adobe Analytics • Web Specialist</p>
+                <button class="btn btn--primary hero__button animate-fade-in-up">
+                    View My Work
+                    <span class="btn__icon">→</span>
+                </button>
+            </div>
+            <div class="hero__bg">
+                <div class="hero__bg-element hero__bg-element--1"></div>
+                <div class="hero__bg-element hero__bg-element--2"></div>
+                <div class="hero__bg-element hero__bg-element--3"></div>
+            </div>
         </div>
-      </div>
-      <div>
-        <span>🏅</span>
-        <div>
-          <strong>Adobe Analytics Business Practitioner</strong><br/>
-          <small>Adobe, 2024</small>
-        </div>
-      </div>
-      <div>
-        <span>🧩</span>
-        <div>
-          <strong>Python for Everybody</strong><br/>
-          <small>Coursera, 2022</small>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects">
-    <h2>Projects 💼</h2>
-    <div class="proj-list">
-      <div>
-        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Portfolio Website"/>
-        <div>
-          <strong>Portfolio Website</strong>
-          <p>A modern, animated, and responsive portfolio.</p>
+    <!-- 🛠️ Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills__container container">
+            <h2 class="section-title reveal-on-scroll">My Skills 🛠️</h2>
+            <div class="skills__grid reveal-on-scroll">
+                <div class="skill-card">
+                    <span class="skill-card__icon">🐍</span>
+                    <span class="skill-card__name">Python</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-card__icon">💻</span>
+                    <span class="skill-card__name">HTML5</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-card__icon">🎨</span>
+                    <span class="skill-card__name">CSS3</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-card__icon">🛠️</span>
+                    <span class="skill-card__name">JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-card__icon">🌐</span>
+                    <span class="skill-card__name">AEM Developer</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-card__icon">📊</span>
+                    <span class="skill-card__name">Adobe Analytics Developer</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="AEM Component Library"/>
-        <div>
-          <strong>AEM Component Library</strong>
-          <p>Reusable AEM components for rapid development.</p>
+    </section>
+
+    <!-- 📜 Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="certifications__container container">
+            <h2 class="section-title reveal-on-scroll">Certifications 📜</h2>
+            <div class="certifications__grid reveal-on-scroll">
+                <div class="cert-card">
+                    <span class="cert-card__icon">✅</span>
+                    <div>
+                        <div class="cert-card__title">Adobe Certified Expert - AEM Developer</div>
+                        <div class="cert-card__issuer">Adobe, 2023</div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-card__icon">🏅</span>
+                    <div>
+                        <div class="cert-card__title">Adobe Analytics Business Practitioner</div>
+                        <div class="cert-card__issuer">Adobe, 2024</div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-card__icon">🧩</span>
+                    <div>
+                        <div class="cert-card__title">Python for Everybody</div>
+                        <div class="cert-card__issuer">Coursera, 2022</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Analytics Dashboard"/>
-        <div>
-          <strong>Analytics Dashboard</strong>
-          <p>Interactive dashboard for Adobe Analytics data.</p>
+    </section>
+
+    <!-- 💼 Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects__container container">
+            <h2 class="section-title reveal-on-scroll">Projects 💼</h2>
+            <div class="projects__grid reveal-on-scroll">
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Project 1 thumbnail" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__title">Portfolio Website</div>
+                        <div class="project-card__desc">A modern, animated, and responsive portfolio to showcase my work and skills.</div>
+                        <a href="https://github.com/kuluking/My_Portfolio" target="_blank" class="btn btn--outline btn--sm">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Project 2 thumbnail" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__title">AEM Component Library</div>
+                        <div class="project-card__desc">Reusable AEM components for rapid enterprise website development.</div>
+                        <a href="#" class="btn btn--outline btn--sm">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Project 3 thumbnail" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__title">Analytics Dashboard</div>
+                        <div class="project-card__desc">An interactive dashboard for visualization of Adobe Analytics data.</div>
+                        <a href="#" class="btn btn--outline btn--sm">View Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Get in Touch 📬</h2>
-    <div class="contact-list">
-      <div>📧 prasantkumarkhatei9@gmail.com</div>
-      <div>📱 7682976781</div>
-      <div>🌍 Remote / Worldwide</div>
-    </div>
-  </section>
-</main>
+    <!-- 📬 Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact__container container">
+            <h2 class="section-title reveal-on-scroll">Get in Touch 📬</h2>
+            <div class="contact__content">
+                <div class="contact__info reveal-on-scroll">
+                    <h3>Let's Work Together!</h3>
+                    <p>Have a project in mind? I'd love to hear from you. Send me a message and I'll get back to you soon!</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <span class="contact__icon">📧</span>
+                            <span>prasantkumarkhatei9@gmail.com</span>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__icon">📱</span>
+                            <span>7682976781</span>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__icon">🌍</span>
+                            <span>Remote / Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form reveal-on-scroll" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">
+                        Send Message 
+                        <span class="btn__icon">✉️</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Prasanta Kumar Khatei. Made with ❤️ and lots of ☕</p>
-</footer>
-
+    <!-- 🦶 Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="footer__logo">Prasanta ✨</span>
+                    <p class="footer__text">Building amazing experiences, one project at a time.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#hero" class="footer__link">Home</a>
+                    <a href="#skills" class="footer__link">Skills</a>
+                    <a href="#certifications" class="footer__link">Certifications</a>
+                    <a href="#projects" class="footer__link">Projects</a>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Prasanta Kumar Khatei. Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
