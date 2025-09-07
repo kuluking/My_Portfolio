@@ -2,35 +2,21 @@ html, body {margin:0;padding:0;}
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   min-height: 100vh;
-  background: var(--main-bg);
+  background: #fff;
+  color: #181928;
   transition: background 1s;
 }
 :root {
-  --main-bg: linear-gradient(120deg, #f8fafc 0%, #e0f7fa 60%, #e1bee7 100%);
-  --hero-bg: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
-  --skills-bg: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
-  --cert-bg: linear-gradient(120deg, #f9d423 0%, #ff4e50 100%);
-  --proj-bg: linear-gradient(120deg, #43cea2 0%, #185a9d 100%);
-  --contact-bg: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
   --header-bg: linear-gradient(90deg, #20a7cc 0%, #8c52ff 100%);
   --header-bg-scrolled: linear-gradient(90deg, #232946 0%, #8c52ff 100%);
+  --header-text: #fff;
   --tile-bg: linear-gradient(135deg, #f1f5fa 60%, #e1bee7 100%);
   --tile-border: #20a7cc22;
-  --text-main: #181928;
-  --header-text: #fff;
-  --night-bg: linear-gradient(120deg, #1a1a2e 0%, #232946 100%);
-  --night-hero-bg: linear-gradient(120deg, #232946 0%, #8c52ff 100%);
-  --night-skills-bg: linear-gradient(120deg, #232946 0%, #20a7cc 100%);
-  --night-cert-bg: linear-gradient(120deg, #232946 0%, #ffd166 100%);
-  --night-proj-bg: linear-gradient(120deg, #232946 0%, #43cea2 100%);
-  --night-contact-bg: linear-gradient(120deg, #232946 0%, #fcb69f 100%);
   --night-header-bg: linear-gradient(90deg, #232946 0%, #8c52ff 100%);
   --night-header-bg-scrolled: linear-gradient(90deg, #181928 0%, #232946 100%);
   --night-tile-bg: linear-gradient(135deg, #232946 60%, #181928 100%);
   --night-tile-border: #8c52ff44;
-  --night-header-text: #fff;
 }
-/* Animated header with name and night-mode button */
 header {
   background: var(--header-bg);
   color: var(--header-text);
@@ -68,22 +54,14 @@ header {
 .animated-name span:nth-child(3n) {animation-delay:.27s;}
 .animated-name span:nth-child(4n) {animation-delay:.33s;}
 .animated-name span:hover {transform: scale(1.24) rotate(-7deg);}
-@keyframes namePop {
-  from {transform:translateY(0);}
-  to {transform:translateY(-7px);}
-}
-@keyframes nameRainbow {
-  0%{filter:hue-rotate(0deg);}
-  100%{filter:hue-rotate(360deg);}
-}
+@keyframes namePop { from {transform:translateY(0);} to {transform:translateY(-7px);} }
+@keyframes nameRainbow { 0%{filter:hue-rotate(0deg);} 100%{filter:hue-rotate(360deg);} }
 #night-toggle {
   background: none; border: none; outline: none; cursor: pointer; margin-left: 15px;
   font-size: 1.5em; color: #ffd166; padding: 5px 0 0 0;
   transition: color 0.3s;
 }
 #night-toggle:hover {color: #fff;}
-
-/* Navigation */
 nav ul {
   display: flex; gap: 32px; justify-content: center; list-style: none; padding: 0; margin: 0;
 }
@@ -99,70 +77,79 @@ nav a:after {
 nav a:hover {color: #ffd166;}
 nav a:hover:after {width: 100%;}
 
-main {max-width: 1000px; margin: 0 auto; padding: 32px 10px;}
+main {max-width: 1100px; margin: 0 auto;}
 .page-section {
-  min-height: 70vh;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-top: 44px;
   padding-bottom: 44px;
-  transition: background 0.7s;
+  position:relative;
 }
-#hero {background: var(--hero-bg);}
-#skills {background: var(--skills-bg);}
-#certifications {background: var(--cert-bg);}
-#projects {background: var(--proj-bg);}
-#contact {background: var(--contact-bg);}
-.night body {background: var(--night-bg);}
-.night #hero {background: var(--night-hero-bg);}
-.night #skills {background: var(--night-skills-bg);}
-.night #certifications {background: var(--night-cert-bg);}
-.night #projects {background: var(--night-proj-bg);}
-.night #contact {background: var(--night-contact-bg);}
-.night header {background: var(--night-header-bg);}
-.night .tile {background: var(--night-tile-bg); border-color: var(--night-tile-border);}
-.night .animated-name {color: #fff;}
-.night footer {background: var(--night-header-bg);}
-.night nav a {color: #ffd166;}
-.night nav a:hover {color: #fff;}
-.night #night-toggle {color: #ffd166;}
-.night .tile-title, .night .tile-meta {color: #fff;}
-.night .section-title {color: #ffd166;}
-.night .gradient-text {-webkit-text-fill-color: #ffd166;}
-
-.avatar img {
-  width: 120px; height: 120px; border-radius: 50%; border: 5px solid #fff;
-  box-shadow: 0 4px 24px #20a7cc44, 0 1px 2px #8c52ff22;
-  background: #fff;
-  animation: avatarGlow 3.5s infinite cubic-bezier(.65,0,.35,1), popIn 1s;
-  z-index: 2;
+.hero-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  animation: bgAnim 8s linear infinite alternate;
+  overflow: hidden;
   position: relative;
 }
-@keyframes avatarGlow {
-  0% { box-shadow: 0 0 0 0 #20a7cc33, 0 0 0 0 #8c52ff33; }
-  50% { box-shadow: 0 0 32px 8px #20a7cc44, 0 0 28px 6px #8c52ff44; }
-  100% { box-shadow: 0 0 0 0 #20a7cc33, 0 0 0 0 #8c52ff33; }
+@keyframes bgAnim {
+  0%{background-position:0% 50%;}
+  100%{background-position:100% 50%;}
 }
-@keyframes popIn {
-  0%{opacity:0;transform:scale(0.5);}
-  60%{opacity:1;transform:scale(1.13);}
-  100%{opacity:1;transform:scale(1);}
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100vw;
+  gap: 60px;
+  z-index:1;
 }
+.avatar-glow {
+  width: 210px; height: 210px; display: flex; align-items:center; justify-content:center;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #20a7cc, #8c52ff, #ffd166, #20a7cc 99%);
+  animation: glowRotate 7s linear infinite;
+  padding: 18px;
+  box-shadow: 0 0 48px 12px #8c52ff33, 0 0 18px #ffd16633;
+}
+@keyframes glowRotate {
+  0% { filter:hue-rotate(0deg);}
+  100% { filter:hue-rotate(360deg);}
+}
+.avatar-glow img {
+  width: 170px; height: 170px; border-radius: 50%; border: 5px solid #fff;
+  background:#fff;box-shadow:0 4px 32px #8c52ff33;
+}
+.hero-content {
+  flex: 1;
+  min-width: 270px;
+  max-width: 540px;
+  text-align: left;
+  z-index:2;
+}
+.hero-content h1 {
+  line-height: 1.1;
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+.intro {
+  font-size: 1.13rem;
+  margin-bottom: 24px;
+  color:#222;
+}
+.highlight {color:#8c52ff;font-weight:600;}
 .fade-in {animation: fadeIn 1.3s both;}
-@keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
-@keyframes slideIn {from{opacity:0;transform:translateX(-40px);}to{opacity:1;transform:translateX(0);}}
-@keyframes fadeUp {from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
-@keyframes bounce {0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
-@keyframes gradientBG {0%{background-position:0% 50%;}100%{background-position:100% 50%;}}
-.gradient-text {
-  background: linear-gradient(90deg, #20a7cc, #8c52ff, #ffd166);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientBG 3s linear infinite alternate;
-}
 .wave {display:inline-block;animation:bounce 1s infinite;}
 .cta-btn {
   display:inline-block;
@@ -200,6 +187,7 @@ main {max-width: 1000px; margin: 0 auto; padding: 32px 10px;}
   gap: 28px;
   justify-items: center;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 .tile {
   width: 200px;
@@ -288,23 +276,46 @@ footer {
   animation: fadeIn 2s;
 }
 
+/* Night theme */
+body.night {background: #181928;}
+body.night .hero-section {background: linear-gradient(120deg, #232946 0%, #8c52ff 100%);}
+body.night #skills {background: linear-gradient(120deg, #232946 0%, #20a7cc 100%);}
+body.night #certifications {background: linear-gradient(120deg, #232946 0%, #ffd166 100%);}
+body.night #projects {background: linear-gradient(120deg, #232946 0%, #43cea2 100%);}
+body.night #contact {background: linear-gradient(120deg, #232946 0%, #fcb69f 100%);}
+body.night header {background: var(--night-header-bg);}
+body.night .tile {background: var(--night-tile-bg); border-color: var(--night-tile-border);}
+body.night .animated-name {color: #fff;}
+body.night footer {background: var(--night-header-bg);}
+body.night nav a {color: #ffd166;}
+body.night nav a:hover {color: #fff;}
+body.night #night-toggle {color: #ffd166;}
+body.night .tile-title, body.night .tile-meta {color: #fff;}
+body.night .section-title {color: #ffd166;}
+body.night .gradient-text {-webkit-text-fill-color: #ffd166;}
+
 /* Responsive */
 @media (max-width:1100px){
   main{max-width:99vw;}
+  .hero-flex {gap:30px;}
 }
 @media (max-width:900px){
   main{padding:18px 2px;}
+  .hero-section {flex-direction: column; justify-content: center;}
+  .hero-flex {flex-direction: column; gap: 28px;}
+  .avatar-glow {margin-bottom: 18px;}
   .tiles-grid {grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));}
   .tile{width: 160px; height: 150px;}
   .page-section{padding-top: 24px; padding-bottom: 24px;}
 }
 @media (max-width:600px) {
   nav ul {gap:11px;font-size:1rem;}
-  .avatar img {width:70px;height:70px;}
+  .avatar-glow {width:120px;height:120px;padding:8px;}
+  .avatar-glow img {width:90px;height:90px;}
+  .hero-flex {gap:10px;}
   .tile-img {width:30px;height:30px;}
   .tiles-grid {grid-template-columns: 1fr 1fr;}
-  .tile{width: 130px; height: 120px;}
+  .tile{width: 110px; height: 88px;}
+  .hero-content h1 {font-size: 1.3rem;}
+  .intro {font-size: 0.97rem;}
 }
-
-/* Add night mode class to body for theme */
-body.night {background: var(--night-bg);}
