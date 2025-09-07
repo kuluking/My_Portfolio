@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovation - Amazing Digital Experiences 🚀</title>
+    <title>Prasanta Kumar Khatei Portfolio 🚀</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- 🎯 Fixed Navigation Header -->
     <header class="header" id="header">
         <nav class="nav container">
-            <!-- Logo/Brand -->
             <div class="nav__brand">
-                <span class="nav__logo">Innovation ✨</span>
+                <span class="nav__logo">Prasanta ✨</span>
             </div>
-
-            <!-- Navigation Menu -->
             <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
                     <a href="#hero" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#features" class="nav__link">Features</a>
+                    <a href="#skills" class="nav__link">Skills</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#about" class="nav__link">About</a>
+                    <a href="#certifications" class="nav__link">Certifications</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
                 </li>
                 <li class="nav__item">
                     <a href="#contact" class="nav__link">Contact</a>
                 </li>
             </ul>
-
-            <!-- Theme Toggle & Mobile Menu -->
             <div class="nav__actions">
-                <!-- Dark/Light Mode Toggle Button -->
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
                     <span class="theme-toggle__icon">🌙</span>
                 </button>
-                
-                <!-- Mobile Menu Toggle -->
                 <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
                     <span class="nav__toggle-icon"></span>
                 </button>
@@ -50,14 +45,17 @@
     <section class="hero" id="hero">
         <div class="hero__container container">
             <div class="hero__content">
-                <h1 class="hero__title animate-fade-in-up">Welcome to Innovation 🚀</h1>
-                <p class="hero__subtitle animate-fade-in-up">Creating Amazing Digital Experiences</p>
+                <div class="profile-img-animated pop-in">
+                    <!-- Using a random avatar SVG service (e.g., DiceBear) -->
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=prasanta" alt="Prasanta Kumar Khatei Avatar" class="profile-img" />
+                </div>
+                <h1 class="hero__title animate-fade-in-up">Hi, I'm Prasanta Kumar Khatei <span class="wave">👋</span></h1>
+                <p class="hero__subtitle animate-fade-in-up">AEM Developer • Adobe Analytics • Web Specialist</p>
                 <button class="btn btn--primary hero__button animate-fade-in-up">
-                    Get Started
+                    View My Work
                     <span class="btn__icon">→</span>
                 </button>
             </div>
-            <!-- Animated Background Elements -->
             <div class="hero__bg">
                 <div class="hero__bg-element hero__bg-element--1"></div>
                 <div class="hero__bg-element hero__bg-element--2"></div>
@@ -66,64 +64,102 @@
         </div>
     </section>
 
-    <!-- ✨ Features Section -->
-    <section class="features" id="features">
-        <div class="features__container container">
-            <h2 class="section-title reveal-on-scroll">Our Features ✨</h2>
-            <div class="features__grid">
-                <!-- Feature Card 1: Creative Design -->
-                <div class="feature-card reveal-on-scroll">
-                    <div class="feature-card__icon">🎨</div>
-                    <h3 class="feature-card__title">Creative Design</h3>
-                    <p class="feature-card__description">Beautiful, modern designs that captivate and engage users</p>
+    <!-- 🛠️ Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills__container container">
+            <h2 class="section-title reveal-on-scroll">My Skills 🛠️</h2>
+            <div class="skills__grid reveal-on-scroll">
+                <div class="skill-card">
+                    <span class="skill-card__icon">🐍</span>
+                    <span class="skill-card__name">Python</span>
                 </div>
-
-                <!-- Feature Card 2: Fast Performance -->
-                <div class="feature-card reveal-on-scroll">
-                    <div class="feature-card__icon">⚡</div>
-                    <h3 class="feature-card__title">Fast Performance</h3>
-                    <p class="feature-card__description">Optimized for speed with smooth animations and interactions</p>
+                <div class="skill-card">
+                    <span class="skill-card__icon">💻</span>
+                    <span class="skill-card__name">HTML5</span>
                 </div>
-
-                <!-- Feature Card 3: Responsive -->
-                <div class="feature-card reveal-on-scroll">
-                    <div class="feature-card__icon">📱</div>
-                    <h3 class="feature-card__title">Responsive</h3>
-                    <p class="feature-card__description">Perfect experience across all devices and screen sizes</p>
+                <div class="skill-card">
+                    <span class="skill-card__icon">🎨</span>
+                    <span class="skill-card__name">CSS3</span>
                 </div>
-
-                <!-- Feature Card 4: Easy to Customize -->
-                <div class="feature-card reveal-on-scroll">
-                    <div class="feature-card__icon">🔧</div>
-                    <h3 class="feature-card__title">Easy to Customize</h3>
-                    <p class="feature-card__description">Clean code structure makes customization simple and efficient</p>
+                <div class="skill-card">
+                    <span class="skill-card__icon">🛠️</span>
+                    <span class="skill-card__name">JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-card__icon">🌐</span>
+                    <span class="skill-card__name">AEM Developer</span>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-card__icon">📊</span>
+                    <span class="skill-card__name">Adobe Analytics Developer</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 💡 About Section -->
-    <section class="about" id="about">
-        <div class="about__container container">
-            <h2 class="section-title reveal-on-scroll">About Us 💡</h2>
-            <div class="about__content">
-                <p class="about__text reveal-on-scroll">
-                    We are passionate developers and designers committed to creating exceptional digital experiences. 
-                    Our team combines creativity with technical expertise to deliver solutions that not only look 
-                    amazing but perform flawlessly.
-                </p>
-                <div class="about__stats reveal-on-scroll">
-                    <div class="stat">
-                        <span class="stat__number">100+</span>
-                        <span class="stat__label">Projects</span>
+    <!-- 📜 Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="certifications__container container">
+            <h2 class="section-title reveal-on-scroll">Certifications 📜</h2>
+            <div class="certifications__grid reveal-on-scroll">
+                <div class="cert-card">
+                    <span class="cert-card__icon">✅</span>
+                    <div>
+                        <div class="cert-card__title">Adobe Certified Expert - AEM Developer</div>
+                        <div class="cert-card__issuer">Adobe, 2023</div>
                     </div>
-                    <div class="stat">
-                        <span class="stat__number">50+</span>
-                        <span class="stat__label">Clients</span>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-card__icon">🏅</span>
+                    <div>
+                        <div class="cert-card__title">Adobe Analytics Business Practitioner</div>
+                        <div class="cert-card__issuer">Adobe, 2024</div>
                     </div>
-                    <div class="stat">
-                        <span class="stat__number">3+</span>
-                        <span class="stat__label">Years</span>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-card__icon">🧩</span>
+                    <div>
+                        <div class="cert-card__title">Python for Everybody</div>
+                        <div class="cert-card__issuer">Coursera, 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💼 Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects__container container">
+            <h2 class="section-title reveal-on-scroll">Projects 💼</h2>
+            <div class="projects__grid reveal-on-scroll">
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Project 1 thumbnail" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__title">Portfolio Website</div>
+                        <div class="project-card__desc">A modern, animated, and responsive portfolio to showcase my work and skills.</div>
+                        <a href="https://github.com/kuluking/My_Portfolio" target="_blank" class="btn btn--outline btn--sm">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Project 2 thumbnail" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__title">AEM Component Library</div>
+                        <div class="project-card__desc">Reusable AEM components for rapid enterprise website development.</div>
+                        <a href="#" class="btn btn--outline btn--sm">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Project 3 thumbnail" />
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__title">Analytics Dashboard</div>
+                        <div class="project-card__desc">An interactive dashboard for visualization of Adobe Analytics data.</div>
+                        <a href="#" class="btn btn--outline btn--sm">View Code</a>
                     </div>
                 </div>
             </div>
@@ -137,24 +173,22 @@
             <div class="contact__content">
                 <div class="contact__info reveal-on-scroll">
                     <h3>Let's Work Together!</h3>
-                    <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.</p>
+                    <p>Have a project in mind? I'd love to hear from you. Send me a message and I'll get back to you soon!</p>
                     <div class="contact__details">
                         <div class="contact__detail">
                             <span class="contact__icon">📧</span>
-                            <span>hello@innovation.com</span>
+                            <span>prasantkumarkhatei9@gmail.com</span>
                         </div>
                         <div class="contact__detail">
                             <span class="contact__icon">📱</span>
-                            <span>+1 (555) 123-4567</span>
+                            <span>7682976781</span>
                         </div>
                         <div class="contact__detail">
-                            <span class="contact__icon">📍</span>
-                            <span>San Francisco, CA</span>
+                            <span class="contact__icon">🌍</span>
+                            <span>Remote / Worldwide</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Contact Form with Validation -->
                 <form class="contact__form reveal-on-scroll" id="contact-form">
                     <div class="form-group">
                         <label for="name" class="form-label">Name *</label>
@@ -189,23 +223,22 @@
         <div class="footer__container container">
             <div class="footer__content">
                 <div class="footer__brand">
-                    <span class="footer__logo">Innovation ✨</span>
-                    <p class="footer__text">Creating amazing digital experiences with passion and precision.</p>
+                    <span class="footer__logo">Prasanta ✨</span>
+                    <p class="footer__text">Building amazing experiences, one project at a time.</p>
                 </div>
                 <div class="footer__links">
                     <a href="#hero" class="footer__link">Home</a>
-                    <a href="#features" class="footer__link">Features</a>
-                    <a href="#about" class="footer__link">About</a>
+                    <a href="#skills" class="footer__link">Skills</a>
+                    <a href="#certifications" class="footer__link">Certifications</a>
+                    <a href="#projects" class="footer__link">Projects</a>
                     <a href="#contact" class="footer__link">Contact</a>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2025 Innovation. Made with ❤️ and lots of ☕</p>
+                <p>&copy; 2025 Prasanta Kumar Khatei. Made with ❤️ and lots of ☕</p>
             </div>
         </div>
     </footer>
-
-    <!-- Loading the JavaScript -->
     <script src="app.js"></script>
 </body>
 </html>
