@@ -1,4 +1,8 @@
+// 🚀 Modern Interactive Website JavaScript - Fixed Version
+// This file handles all interactive features and animations
 
+/* ===== IMMEDIATE INITIALIZATION ===== */
+// Initialize features immediately when script loads
 (function() {
     'use strict';
 
