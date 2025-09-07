@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation - Amazing Digital Experiences 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🎯 Fixed Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- Logo/Brand -->
+            <div class="nav__brand">
+                <span class="nav__logo">Innovation ✨</span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#hero" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#features" class="nav__link">Features</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Theme Toggle & Mobile Menu -->
+            <div class="nav__actions">
+                <!-- Dark/Light Mode Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span class="nav__toggle-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 🚀 Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title animate-fade-in-up">Welcome to Innovation 🚀</h1>
+                <p class="hero__subtitle animate-fade-in-up">Creating Amazing Digital Experiences</p>
+                <button class="btn btn--primary hero__button animate-fade-in-up">
+                    Get Started
+                    <span class="btn__icon">→</span>
+                </button>
+            </div>
+            <!-- Animated Background Elements -->
+            <div class="hero__bg">
+                <div class="hero__bg-element hero__bg-element--1"></div>
+                <div class="hero__bg-element hero__bg-element--2"></div>
+                <div class="hero__bg-element hero__bg-element--3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✨ Features Section -->
+    <section class="features" id="features">
+        <div class="features__container container">
+            <h2 class="section-title reveal-on-scroll">Our Features ✨</h2>
+            <div class="features__grid">
+                <!-- Feature Card 1: Creative Design -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-card__icon">🎨</div>
+                    <h3 class="feature-card__title">Creative Design</h3>
+                    <p class="feature-card__description">Beautiful, modern designs that captivate and engage users</p>
+                </div>
+
+                <!-- Feature Card 2: Fast Performance -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-card__icon">⚡</div>
+                    <h3 class="feature-card__title">Fast Performance</h3>
+                    <p class="feature-card__description">Optimized for speed with smooth animations and interactions</p>
+                </div>
+
+                <!-- Feature Card 3: Responsive -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-card__icon">📱</div>
+                    <h3 class="feature-card__title">Responsive</h3>
+                    <p class="feature-card__description">Perfect experience across all devices and screen sizes</p>
+                </div>
+
+                <!-- Feature Card 4: Easy to Customize -->
+                <div class="feature-card reveal-on-scroll">
+                    <div class="feature-card__icon">🔧</div>
+                    <h3 class="feature-card__title">Easy to Customize</h3>
+                    <p class="feature-card__description">Clean code structure makes customization simple and efficient</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💡 About Section -->
+    <section class="about" id="about">
+        <div class="about__container container">
+            <h2 class="section-title reveal-on-scroll">About Us 💡</h2>
+            <div class="about__content">
+                <p class="about__text reveal-on-scroll">
+                    We are passionate developers and designers committed to creating exceptional digital experiences. 
+                    Our team combines creativity with technical expertise to deliver solutions that not only look 
+                    amazing but perform flawlessly.
+                </p>
+                <div class="about__stats reveal-on-scroll">
+                    <div class="stat">
+                        <span class="stat__number">100+</span>
+                        <span class="stat__label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">50+</span>
+                        <span class="stat__label">Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">3+</span>
+                        <span class="stat__label">Years</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📬 Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact__container container">
+            <h2 class="section-title reveal-on-scroll">Get in Touch 📬</h2>
+            <div class="contact__content">
+                <div class="contact__info reveal-on-scroll">
+                    <h3>Let's Work Together!</h3>
+                    <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <span class="contact__icon">📧</span>
+                            <span>hello@innovation.com</span>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__icon">📱</span>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__icon">📍</span>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form with Validation -->
+                <form class="contact__form reveal-on-scroll" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">
+                        Send Message 
+                        <span class="btn__icon">✉️</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🦶 Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="footer__logo">Innovation ✨</span>
+                    <p class="footer__text">Creating amazing digital experiences with passion and precision.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#hero" class="footer__link">Home</a>
+                    <a href="#features" class="footer__link">Features</a>
+                    <a href="#about" class="footer__link">About</a>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Innovation. Made with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading the JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
