@@ -19,12 +19,12 @@ const mainHeader = document.getElementById('main-header');
 window.addEventListener('scroll',()=>{
   if(window.scrollY > 40) {
     mainHeader.style.background = night
-      ? 'var(--night-header-bg-scrolled)'
-      : 'var(--header-bg-scrolled)';
+      ? 'linear-gradient(90deg, #181928 0%, #232946 100%)'
+      : 'linear-gradient(90deg, #232946 0%, #8c52ff 100%)';
   } else {
     mainHeader.style.background = night
-      ? 'var(--night-header-bg)'
-      : 'var(--header-bg)';
+      ? 'linear-gradient(90deg, #232946 0%, #8c52ff 100%)'
+      : 'rgba(32, 167, 204, 0.98)';
   }
 });
 
