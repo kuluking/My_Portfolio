@@ -7,7 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+<header id="main-header">
+  <div class="nav-brand">
+    <span class="animated-name">
+      <span>P</span><span>r</span><span>a</span><span>s</span><span>a</span><span>n</span><span>t</span><span>a</span>
+      <span style="margin:0 8px;"></span>
+      <span>K</span><span>u</span><span>m</span><span>a</span><span>r</span>
+      <span style="margin:0 8px;"></span>
+      <span>K</span><span>h</span><span>a</span><span>t</span><span>e</span><span>i</span>
+    </span>
+    <button id="night-toggle" title="Toggle Night Mode" aria-label="Toggle Dark/Light Mode">
+      <span id="night-toggle-icon">🌙</span>
+    </button>
+  </div>
   <nav>
     <ul>
       <li><a href="#hero">Home</a></li>
@@ -19,8 +31,7 @@
   </nav>
 </header>
 <main>
-  <section id="hero">
-    <div class="hero-bg"></div>
+  <section id="hero" class="page-section">
     <div class="avatar popin">
       <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=prasanta" alt="Avatar" />
     </div>
@@ -29,9 +40,7 @@
     <a href="#projects" class="cta-btn bounce">View My Work ↓</a>
   </section>
 
-  <div class="gradient-divider"></div>
-
-  <section id="skills">
+  <section id="skills" class="page-section">
     <h2 class="section-title slide-in">My Skills 🛠️</h2>
     <div class="tiles-grid">
       <div class="tile skill-tile">
@@ -61,9 +70,7 @@
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
-
-  <section id="certifications">
+  <section id="certifications" class="page-section">
     <h2 class="section-title slide-in">Certifications 📜</h2>
     <div class="tiles-grid">
       <div class="tile cert-tile">
@@ -84,9 +91,7 @@
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
-
-  <section id="projects">
+  <section id="projects" class="page-section">
     <h2 class="section-title slide-in">Projects 💼</h2>
     <div class="tiles-grid">
       <div class="tile project-tile">
@@ -107,9 +112,7 @@
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
-
-  <section id="contact">
+  <section id="contact" class="page-section">
     <h2 class="section-title slide-in">Get in Touch 📬</h2>
     <div class="contact-list">
       <div class="fade-in">📧 prasantkumarkhatei9@gmail.com</div>
