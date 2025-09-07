@@ -825,4 +825,39 @@ a:hover {
   }
 }
 
+
+html,body {margin:0;padding:0;}
+body {font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(135deg, #f8fafc 0%, #e0f7fa 60%, #e1bee7 100%);}
+header {background: linear-gradient(90deg, #20a7cc 0%, #8c52ff 100%); padding:16px 0;}
+nav ul {display:flex;gap:32px;justify-content:center;list-style:none;padding:0;margin:0;}
+nav a {color:#fff;text-decoration:none;font-weight:600;font-size:1.08rem;}
+nav a:hover {color:#ffd166;}
+main {max-width:800px;margin:0 auto;padding:32px 10px;}
+section {margin-bottom:48px;}
+.avatar {text-align:center;margin-bottom:15px;}
+.avatar img {width:120px;height:120px;border-radius:50%;border:5px solid #fff;box-shadow:0 4px 18px #20a7cc33;}
+#hero {text-align:center;}
+#hero h1 {margin-bottom:6px;font-size:2.1rem;background:linear-gradient(90deg,#20a7cc 40%,#8c52ff 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+#hero p {color:#888;font-size:1.15rem;}
+h2 {background:linear-gradient(90deg,#20a7cc 40%,#8c52ff 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.5rem;text-align:center;margin-bottom:24px;}
+.skills-list {display:flex;flex-wrap:wrap;gap:16px;justify-content:center;}
+.skills-list span {background:#fff;border-radius:18px;padding:10px 18px;font-weight:600;box-shadow:0 2px 6px #20a7cc19;}
+.cert-list {display:flex;flex-direction:column;gap:18px;align-items:center;}
+.cert-list div {display:flex;align-items:center;gap:16px;background:#fff;border-radius:16px;padding:16px 22px;box-shadow:0 2px 8px #8c52ff11;}
+.cert-list strong {font-size:1.1em;}
+.cert-list span {font-size:2rem;}
+.proj-list {display:flex;flex-direction:column;gap:18px;}
+.proj-list div {display:flex;gap:16px;background:#fff;border-radius:16px;box-shadow:0 2px 8px #8c52ff11;align-items:center;}
+.proj-list img {width:70px;height:70px;border-radius:14px;object-fit:cover;}
+.proj-list strong {font-size:1.1em;}
+.proj-list p {margin:4px 0 0 0;color:#555;}
+.contact-list {display:flex;flex-direction:column;gap:8px;align-items:center;font-size:1rem;}
+footer {text-align:center;padding:32px 0 16px 0;background:linear-gradient(90deg,#20a7cc 10%,#8c52ff 100%);color:#fff;margin-top:32px;}
+@media (max-width:600px) {
+  nav ul {gap:16px;font-size:1rem;}
+  main {padding:18px 3px;}
+  .avatar img {width:80px;height:80px;}
+  .proj-list img {width:48px;height:48px;}
+}
+
 /* ===== END ===== */
